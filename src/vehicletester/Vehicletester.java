@@ -31,17 +31,17 @@ public class Vehicletester {
         car1.driveVehicle(225.0);
         System.out.println(car1);
 
-        //Try to drive 1000 km - runs out of gas
-        car1.driveVehicle(1000.0);
-        System.out.println(car1);
-
-        //Add 25L of gas
-        car1.addFuel(25.0);
-        System.out.println(car1);
-
-        //Try to add 100 L of gas
-        car1.addFuel(100.0);
-        System.out.println(car1);
+//        //Try to drive 1000 km - runs out of gas
+//        car1.driveVehicle(1000.0);
+//        System.out.println(car1);
+//
+//        //Add 25L of gas
+//        car1.addFuel(25.0);
+//        System.out.println(car1);
+//
+//        //Try to add 100 L of gas
+//        car1.addFuel(100.0);
+//        System.out.println(car1);
         
         //print the vehicle revenue
         System.out.println("Revenue = " + car1.vehicleRevenue());
