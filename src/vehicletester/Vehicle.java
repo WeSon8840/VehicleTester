@@ -49,22 +49,42 @@ public class Vehicle {
       gasKilometrage = gK;
   }
   
+    /**
+     * This method allow the user to set the L/km
+     * pre:needs the value of L/km
+     * post:sets the value of L/km
+     */  
   public double getKilometrage(){
       return gasKilometrage;
   }
   
+    /**
+     * This method allow the user to calculate revenue of vehicle
+     * pre: needs the value of revenue
+     * post: calculate the value of revenue
+     */ 
   public double vehicleRevenue(){
       double revenue;
       revenue = numberOfPassengers * passengerFare;
       return revenue;
   }
   
+    /**
+     * This method allow the user to calculate cost of vehicle
+     * pre: needs the value of cost
+     * post: calculate the value of cost
+     */ 
   public double vehicleCost(){
       double cost;
-      cost = costOfFuel * kilometresTravelled * gasKilometrage;
+      cost = (costOfFuel * kilometresTravelled * gasKilometrage)/100;
       return cost;
   }
   
+    /**
+     * This method allow the user to calculate profit of vehicle
+     * pre: needs the value of profit
+     * post: calculate the value of profit
+     */ 
   public double vehicleProfit(){
       double profit;
       profit = vehicleRevenue() - vehicleCost();
